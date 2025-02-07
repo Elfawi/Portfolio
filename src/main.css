@@ -433,7 +433,7 @@ article.active {
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
   box-shadow: var(--shadow2);
-  z-index: 5;
+  z-index: 15;
 }
 
 .navbar-list {
@@ -480,7 +480,7 @@ article.active {
 
 .about-text p {
   margin-bottom: 15px;
-  text-align: justify;
+  /* text-align: justify; */
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -809,7 +809,7 @@ article.active {
   color: var(--light-gray);
   font-weight: var(--fw300);
   line-height: 1.6;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 /*SKILLS*/
@@ -1112,7 +1112,7 @@ article.active {
   font-size: var(--fs6);
   font-weight: var(--fw300);
   line-height: 1.6;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 /*CONTACT*/
@@ -1200,7 +1200,7 @@ textarea.form-input::-webkit-realizer {
   text-transform: capitalize;
   box-shadow: var(--shadow3);
   z-index: 1;
-  transition: var(--transition1);
+  transition: all var(--transition-2);
 }
 
 .form-btn::before {
@@ -1241,7 +1241,15 @@ textarea.form-input::-webkit-realizer {
   .clients-item {
     min-width: calc(33.33% - 10px);
   }
-
+  .timeline-text {
+    text-align: justify;
+  }
+  .blog-text {
+    text-align: justify;
+  }
+  .about-text p {
+    text-align: justify;
+  }
   .project-img,
   .blog-banner-box {
     height: auto;
