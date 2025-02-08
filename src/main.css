@@ -451,9 +451,20 @@ article.active {
   font-size: var(--fs8);
   padding: 20px 7px;
   transition: all var(--transition1);
-  border-bottom: 2px solid transparent;
+  /* border-bottom: 2px solid transparent; */
+  position: relative;
 }
-
+.navbar-link::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  bottom: 0;
+  left: 0;
+  border-radius: 3px;
+  background: var(--text-gradient-yellow);
+  transition: all var(--transition1);
+}
 .navbar-link:hover,
 .navbar-link:focus {
   color: var(--light-gray70);
@@ -461,9 +472,11 @@ article.active {
 .navbar-link.active {
   color: var(--orange-yellow-crayola);
   /* transform: scaleX(1.1); */
-  border-bottom: 2px solid var(--vegas-gold);
+  /* border-bottom: 2px solid var(--vegas-gold); */
 }
-
+.navbar-link.active.navbar-link::before {
+  width: 100%;
+}
 /*ABOUT*/
 
 .about .article-title {
