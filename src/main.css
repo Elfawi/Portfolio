@@ -316,7 +316,7 @@ article.active {
   background: var(--onyx);
   font-size: var(--fs8);
   font-weight: var(--fw300);
-  width: max-content;
+  /* width: max-content; */
   padding: 3px 12px;
   border-radius: 8px;
 }
@@ -1332,6 +1332,7 @@ textarea.form-input::-webkit-realizer {
   }
   .info-content .title {
     padding: 5px 10px;
+    width: max-content;
   }
 
   .info-more-btn {
