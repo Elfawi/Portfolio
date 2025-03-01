@@ -442,6 +442,7 @@ article.active {
   justify-content: center;
   align-items: center;
   padding: 0 10px;
+  overflow: hidden;
 }
 /* .navbar-item {
   cursor: pointer;
@@ -451,7 +452,6 @@ article.active {
   font-size: var(--fs8);
   padding: 20px 7px;
   transition: all var(--transition1);
-  /* border-bottom: 2px solid transparent; */
   position: relative;
 }
 .navbar-link::before {
@@ -471,8 +471,7 @@ article.active {
 }
 .navbar-link.active {
   color: var(--orange-yellow-crayola);
-  /* transform: scaleX(1.1); */
-  /* border-bottom: 2px solid var(--vegas-gold); */
+  font-weight: 700;
 }
 .navbar-link.active.navbar-link::before {
   width: 100%;
@@ -493,7 +492,6 @@ article.active {
 
 .about-text p {
   margin-bottom: 15px;
-  /* text-align: justify; */
   padding-left: 10px;
   padding-right: 10px;
 }
