@@ -469,6 +469,9 @@ article.active {
 .navbar-link:focus {
   color: var(--light-gray70);
 }
+.navbar-link:hover {
+  background: var(--bg-gradient-onyx);
+}
 .navbar-link.active {
   color: var(--orange-yellow-crayola);
   font-weight: 700;
