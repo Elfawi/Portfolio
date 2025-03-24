@@ -467,7 +467,8 @@ article.active {
 }
 .navbar-link:hover,
 .navbar-link:focus {
-  color: var(--light-gray70);
+  /* color: var(--light-gray70); */
+  color: var(--white1);
 }
 .navbar-link.active {
   color: var(--orange-yellow-crayola);
