@@ -69,13 +69,17 @@ for (let i = 0; i < selectItems.length; i++) {
   });
 }
 
-const filterItems = document.querySelectorAll("[data-filter-item]");
+const filterItems = [...document.querySelectorAll("[data-filter-item]")];
 
 const filterFunc = function (selectedValue) {
+  console.log(selectedValue);
+  console.log(filterItems.map((item) => item.dataset.category)); //console.log(filterItems.dataset.category);
   for (let i = 0; i < filterItems.length; i++) {
     if (selectedValue == "all") {
       filterItems[i].classList.add("active");
-    } else if (selectedValue == filterItems[i].dataset.category) {
+    }
+    //  else if (selectedValue == filterItems[i].dataset.category) {
+    else if (filterItems[i].dataset.category.includes(selectedValue)) {
       filterItems[i].classList.add("active");
     } else {
       filterItems[i].classList.remove("active");

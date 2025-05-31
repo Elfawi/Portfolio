@@ -1800,3 +1800,65 @@ textarea.form-input::-webkit-realizer {
     background: var(--bg-gradient-onyx);
   }
 }
+@media (min-width: 1450px) {
+  main {
+    max-width: 1400px;
+  }
+  .project-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .navbar-link {
+    --fs8: 18px;
+  }
+  .filter-item button {
+    font-size: var(--fs4);
+  }
+  .info-content .title {
+    font-size: var(--fs7);
+  }
+  .contact-title {
+    font-size: var(--fs7);
+  }
+  .social-item .social-link {
+    color: var(--light-gray70);
+    font-size: 20px;
+  }
+  .timeline-text {
+    max-width: 800px;
+  }
+  .timeline-item-title {
+    font-size: var(--fs4);
+  }
+  .timeline-list {
+    font-size: var(--fs4);
+  }
+}
+
+@media (min-width: 1650px) {
+  main {
+    max-width: 1600px;
+  }
+  .info-content .title {
+    font-size: var(--fs6);
+  }
+  .contact-title {
+    font-size: var(--fs6);
+  }
+  .social-item .social-link {
+    color: var(--light-gray70);
+    font-size: 20px;
+  }
+  .project-title {
+    font-size: var(--fs4);
+  }
+  .contact-info :is(.contact-link, time, address) {
+    --fs7: 16px;
+  }
+  .icon-box {
+    width: 64px;
+    height: 64px;
+  }
+  .timeline-text {
+    max-width: 1000px;
+  }
+}
