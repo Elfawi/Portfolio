@@ -139,6 +139,23 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
+// const toggleBtn = document.querySelector(".toggle-btn");
+// toggleBtn.addEventListener("click", function () {
+//   const html = document.querySelector("html");
+//   // dark mode
+//   html.classList.toggle("light");
+//   // light
+// });
+
+const toggleBtn = document.querySelector(".toggle-btn");
+const html = document.querySelector("html");
+toggleBtn.addEventListener("click", function () {
+  console.log(html.getAttribute("data-theme"));
+  const isDark = html.getAttribute("data-theme") === "dark";
+
+  html.setAttribute("data-theme", isDark ? "light" : "dark");
+});
+
 // navigationLinks.forEach((link) => {
 //   link.addEventListener("click", function () {
 //     pages.forEach((page) => {
