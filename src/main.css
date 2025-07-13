@@ -530,7 +530,8 @@ article.active {
 .service-icon-box {
   margin-bottom: 10px;
 }
-.service-icon-box img {
+.service-icon-box > * {
+  display: block;
   margin: auto;
 }
 
@@ -1014,7 +1015,7 @@ article.active {
   opacity: 1;
 }
 
-.project-item-icon-box ion-icon {
+.project-item-icon-box lord-icon {
   --ionicon-stroke-width: 50px;
 }
 
@@ -1389,9 +1390,9 @@ textarea.form-input::-webkit-realizer {
     gap: 18px;
     padding: 30px;
   }
-  .service-item:hover > .service-icon-box {
+  /* .service-item:hover > .service-icon-box {
     transform: rotate(-45deg);
-  }
+  } */
   .service-icon-box {
     margin-bottom: 0;
     margin-top: 5px;
