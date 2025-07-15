@@ -121,6 +121,7 @@
                 target="_blank"
                 href="https://www.facebook.com/profile.php?id=100018202561561"
                 class="social-link"
+                aria-label="Facebook"
                 ><ion-icon name="logo-facebook"></ion-icon
               ></a>
             </li>
@@ -129,6 +130,7 @@
                 target="_blank"
                 href="https://x.com/M7amedElfawy"
                 class="social-link"
+                aria-label="X"
                 ><ion-icon name="logo-twitter"></ion-icon
               ></a>
             </li>
@@ -137,6 +139,7 @@
                 target="_blank"
                 href="https://www.instagram.com/m7amed_elfawi/"
                 class="social-link"
+                aria-label="Instagram"
                 ><ion-icon name="logo-instagram"></ion-icon
               ></a>
             </li>
@@ -162,8 +165,12 @@
             <li class="navbar-item">
               <button class="navbar-link" data-nav-link>Contact</button>
             </li>
-            <label class="switch">
-              <input type="checkbox" class="input__check toggle-btn" />
+            <label class="switch" for="toggle-btn" aria-label="toggle-btn">
+              <input
+                id="toggle-btn"
+                type="checkbox"
+                class="input__check toggle-btn"
+              />
               <span class="slider"></span>
             </label>
           </ul>
