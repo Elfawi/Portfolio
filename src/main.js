@@ -146,24 +146,26 @@ for (let i = 0; i < navigationLinks.length; i++) {
 //   html.classList.toggle("light");
 //   // light
 // });
+const toggleBtn = document.querySelector(".toggle-btn");
 
 const html = document.querySelector("html");
 html.setAttribute(
   "data-theme",
   JSON.parse(localStorage.getItem("pageMode")) || "dark"
 );
+const isDark = html.getAttribute("data-theme") === "dark";
+toggleBtn.checked = !isDark;
 const icons = document.querySelectorAll("lord-icon");
 icons.forEach((icon) => {
   if (document.documentElement.getAttribute("data-theme") === "light") {
     icon.colors = "primary:#b9ff20,secondary:#a1d62f";
   } else {
-    icon.colors = "primary:##ffdb70,secondary:#ffdb70";
+    icon.colors = "primary:#ffdb70,secondary:#ffdb70";
   }
 });
 // const img = document.querySelector(".service-icon-box img");
 // img.style.filter = "";
 // console.log(img);
-const toggleBtn = document.querySelector(".toggle-btn");
 toggleBtn.addEventListener("click", function () {
   const isDark = html.getAttribute("data-theme") === "dark";
   html.setAttribute("data-theme", isDark ? "light" : "dark");
