@@ -424,6 +424,9 @@ article.active {
 /*NAVBAR*/
 
 .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   bottom: 0;
   left: 0;
