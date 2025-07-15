@@ -1868,6 +1868,9 @@ textarea.form-input::-webkit-realizer {
 }
 html[data-theme="light"] {
   filter: invert(100%);
+  --orange-yellow-crayola: #b9ff20;
+  --vegas-gold: #a1d62f;
+  --text-gradient-yellow: linear-gradient(90deg, #b9ff20 0%, #a1d62f 100%);
 }
 html[data-theme="light"] .avatar-box img {
   filter: invert(100%);
@@ -1880,6 +1883,18 @@ html[data-theme="light"] .project-img img {
 }
 html[data-theme="light"] .blog-banner-box img {
   filter: invert(100%);
+}
+html[data-theme="light"] .modal-avatar-box img[data-modal-img] {
+  filter: invert(100%);
+}
+html[data-theme="light"] .modal-img-wrapper img:nth-child(2) {
+  filter: hue-rotate(30deg);
+}
+html[data-theme="light"] .service-icon-box img {
+  filter: hue-rotate(30deg);
+}
+html[data-theme="light"] .clients-item img:hover {
+  filter: hue-rotate(30deg);
 }
 
 /*=============== DARK/LIGHT THEME ===============*/

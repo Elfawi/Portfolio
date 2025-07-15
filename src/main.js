@@ -147,13 +147,36 @@ for (let i = 0; i < navigationLinks.length; i++) {
 //   // light
 // });
 
-const toggleBtn = document.querySelector(".toggle-btn");
 const html = document.querySelector("html");
+html.setAttribute(
+  "data-theme",
+  JSON.parse(localStorage.getItem("pageMode")) || "dark"
+);
+const icons = document.querySelectorAll("lord-icon");
+icons.forEach((icon) => {
+  if (document.documentElement.getAttribute("data-theme") === "light") {
+    icon.colors = "primary:#b9ff20,secondary:#a1d62f";
+  } else {
+    icon.colors = "primary:##ffdb70,secondary:#ffdb70";
+  }
+});
+// const img = document.querySelector(".service-icon-box img");
+// img.style.filter = "";
+// console.log(img);
+const toggleBtn = document.querySelector(".toggle-btn");
 toggleBtn.addEventListener("click", function () {
-  console.log(html.getAttribute("data-theme"));
   const isDark = html.getAttribute("data-theme") === "dark";
-
   html.setAttribute("data-theme", isDark ? "light" : "dark");
+  const pageMode = html.getAttribute("data-theme");
+  console.log(pageMode);
+  localStorage.setItem("pageMode", JSON.stringify(pageMode));
+  icons.forEach((icon) => {
+    if (pageMode === "light") {
+      icon.colors = "primary:#b9ff20,secondary:#a1d62f";
+    } else {
+      icon.colors = "primary:#ffdb70,secondary:#ffdb70";
+    }
+  });
 });
 
 // navigationLinks.forEach((link) => {
@@ -170,3 +193,5 @@ toggleBtn.addEventListener("click", function () {
 //     });
 //   });
 // });
+
+//////
