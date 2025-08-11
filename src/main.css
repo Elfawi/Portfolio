@@ -1002,6 +1002,9 @@ article.active {
   background: var(--jet);
   color: var(--orange-yellow-crayola);
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(var(--scale));
@@ -1999,4 +2002,8 @@ html[data-theme="light"] .slider {
   50% {
     transform: translateY(0px) rotateX(15deg) rotateY(-20deg);
   }
+}
+
+.demo-user {
+  font-size: 10px;
 }
