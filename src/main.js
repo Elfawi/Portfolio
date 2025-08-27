@@ -197,3 +197,49 @@ toggleBtn.addEventListener("click", function () {
 // });
 
 //////
+
+/////// UNDER DEVELOPMENT ///////
+// const projectListEl = document.querySelector(".project-list");
+// projectListEl.innerHTML = "";
+// const projects = [
+//   {
+//     name: "Forkify",
+//     image: "src/images/Projects/forkify.png",
+//     category: ["all", "web"],
+//     live: "https://forkify-phi.vercel.app/",
+//     source: "https://github.com/MohamedElfawi/Forkify",
+//     description:
+//       "A web application that helps you find recipes and cook delicious meals. It allows you to search for recipes by name, ingredient, or cuisine, and displays detailed information about each recipe, including the ingredients, cooking instructions, and nutritional information. You can also save your favorite recipes and share them with others. Forkify is a great tool for anyone who loves cooking and wants to learn new recipes.",
+//   },
+// ];
+
+// projects.forEach((project) => {
+//   let markup;
+//   markup = `
+//      <li
+//                 class="project-item active"
+//                 data-filter-item
+//                 data-category="${project.category.join(" ")}"
+//               >
+//                 <a target="_blank" href="${project.live}">
+//                   <figure class="project-img">
+//                     <div class="project-item-icon-box">
+//                       <ion-icon name="eye-outline"></ion-icon>
+//                     </div>
+
+//                     <img
+//                       src="${project.image}"
+//                       alt="Cortexa Landing Page"
+//                       loading="lazy"
+//                     />
+//                   </figure>
+
+//                   <h3 class="project-title">${project.name}</h3>
+//                   <p class="project-category">${project.category.join(
+//                     " | "
+//                   )}</p>
+//                 </a>
+//               </li>
+//   `;
+//   projectListEl.insertAdjacentHTML("beforeend", markup);
+// });
